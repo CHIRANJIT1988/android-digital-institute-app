@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_download_progress"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:visibility="visible"
+    android:padding="10dp"
+    android:layout_below="@+id/score"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/my_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="@color/yellow"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="70"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/style_circular"
+        android:secondaryProgress="100" />
+
+</RelativeLayout>

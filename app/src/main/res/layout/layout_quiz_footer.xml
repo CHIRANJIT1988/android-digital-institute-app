@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:visibility="gone"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnPrevious"
+        style="@style/CustomButtonStyle"
+        android:layout_weight="1"
+        android:text="@string/Previous" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/CustomButtonStyle"
+        android:layout_weight="1"
+        android:text="@string/Next" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnEnd"
+        style="@style/CustomButtonStyle"
+        android:layout_weight="1"
+        android:text="@string/End" />
+
+</LinearLayout>

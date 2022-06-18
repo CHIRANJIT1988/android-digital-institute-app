@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "366336316526",
+    "firebase_url": "https://specturm-eduventures-app.firebaseio.com",
+    "project_id": "specturm-eduventures-app",
+    "storage_bucket": "specturm-eduventures-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366336316526:android:85a302ae0ac7f216",
+        "android_client_info": {
+          "package_name": "app.institute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366336316526-f8p1ekk9hc7m1ud1sd484fh1leeaorvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.institute",
+            "certificate_hash": "7FB473F505520163DED9D7F98C7DDB61CF35AAA8"
+          }
+        },
+        {
+          "client_id": "366336316526-drcgrn6icc3s5ptoqtvcfq5fmk7g6897.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ5Y3hjwXo0xPwOrKAfV86oC5r7SO7IJc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366336316526-drcgrn6icc3s5ptoqtvcfq5fmk7g6897.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

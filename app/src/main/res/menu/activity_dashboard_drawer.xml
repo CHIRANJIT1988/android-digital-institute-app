@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_bell_grey600_24dp"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_account_settings_variant_grey600_24dp"
+            android:title="My Profile" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_variant_grey600_24dp"
+                android:title="Share this App" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_grey600_24dp"
+                android:title="Rate this App" />
+        </menu>
+    </item>
+
+</menu>

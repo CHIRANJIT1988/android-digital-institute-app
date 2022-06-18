@@ -1,0 +1,48 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/score_background"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/congratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Congratulation!"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/congratulation"
+        android:text="You Scored ..."
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/divider"
+        android:textSize="22sp"/>
+
+
+    <include
+        layout="@layout/layout_score_progress"/>
+
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:text="70"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/yellow"
+        android:textSize="84sp"/>
+     -->
+
+</RelativeLayout>

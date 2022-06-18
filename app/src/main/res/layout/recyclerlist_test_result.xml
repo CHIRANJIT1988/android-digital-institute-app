@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_order"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@null"
+                android:layout_margin="10dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_not_attempt" />
+
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_toEndOf="@id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="10dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="5dp"
+                android:textSize="13sp"
+                android:text="Today's Attendance" />
+
+            <ImageView
+                android:id="@+id/diagram"
+                android:layout_toEndOf="@id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@id/thumbnail"
+                android:layout_below="@+id/diagram"
+                android:background="@color/divider" />
+
+            <TextView
+                android:id="@+id/correct_answer"
+                android:layout_toEndOf="@id/thumbnail"
+                android:layout_below="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:textColor="#4CAF50"
+                android:text="Tezpur"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/negative_marks"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:text="-5"/>
+
+            <TextView
+                android:id="@+id/positive_marks"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/white"
+                android:text="+5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

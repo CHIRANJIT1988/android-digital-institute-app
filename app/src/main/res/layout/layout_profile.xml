@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackground" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/myTextPrimaryColor"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="PROFILE DETAILS" />
+
+            <Button
+                android:id="@+id/button_edit_profile"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/Edit"
+                android:background="@drawable/noborder"
+                android:textColor="@color/myPrimaryColor"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/name_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_account_card_details_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_toEndOf="@id/name_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/name_icon"
+                android:layout_below="@+id/student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Name"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/name_icon"
+                android:layout_toEndOf="@+id/name_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_at_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/student_email"
+                android:layout_toEndOf="@id/email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/email_icon"
+                android:layout_below="@+id/student_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Mail"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/email_icon"
+                android:layout_toEndOf="@+id/email_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/gender_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_account_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/student_gender"
+                android:layout_toEndOf="@id/gender_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/gender_icon"
+                android:layout_below="@+id/student_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Gender"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/gender_icon"
+                android:layout_toEndOf="@+id/gender_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_map_marker_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/student_location"
+                android:layout_toEndOf="@id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/location_icon"
+                android:layout_below="@+id/student_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Location"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/location_icon"
+                android:layout_toEndOf="@+id/location_icon"
+                android:background="@color/divider" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/date_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_cake_variant_grey600_24dp"
+                android:contentDescription="@null"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/student_dob"
+                android:layout_toEndOf="@id/date_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/myTextPrimaryColor"
+                android:paddingTop="15dp"
+                android:paddingEnd="8dp"
+                android:paddingStart="0dp"
+                android:paddingBottom="3dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:text="N/A" />
+
+
+            <TextView
+                android:layout_toEndOf="@id/date_icon"
+                android:layout_below="@+id/student_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="5dp"
+                android:paddingStart="0dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:textSize="12sp"
+                android:text="Date of Birth"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

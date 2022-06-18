@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/dummyfrag_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/myTextPrimaryColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Your Question"/>
+
+        <ImageView
+            android:id="@+id/diagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_selection_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="8dp"
+                android:text="3:30 PM - 6:30 PM" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="8dp"
+                android:text="9:30 AM - 12:30 PM" />
+             -->
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
